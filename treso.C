@@ -101,9 +101,6 @@ void treco(std::string filename="h.root"){
  //  RooFFTConvPdf conv("conv","delta (X) gaussian", *time, tm, gaussmodel); 
 
   /// effective resolution 
-
-//   RooRealVar scale("scale", "scale", )
-  // RooFormulaVar gms1 ("gms1", "gms1", "scale*0.052864652", RooArgList(scale));
    RooRealVar effs1 ("effs1", "effs1", 0.052864652, 0., 0.5);
    RooGaussModel effgaussmodel( "effgm", "effgm", *time, gmm, effs1);
 
