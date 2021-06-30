@@ -139,7 +139,6 @@ void trecoe(std::string filename="h.root"){
     RooPlot *Pullframe = time->frame();
 
     Pullframe->addPlotable(xpull, "P");
-
     Pullframe->GetXaxis()->SetTitle("trecoE");
     Pullframe->GetYaxis()->SetNdivisions(205, kTRUE);
     Pullframe->GetYaxis()->SetTickLength(0.083);
